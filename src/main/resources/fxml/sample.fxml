@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="500.0" prefWidth="650.0">
+            <children>
+                <AnchorPane prefHeight="79.0" prefWidth="314.0" style="-fx-background-color: #67e6dc;">
+                    <children>
+                        <Text layoutX="5.0" layoutY="48.0" strokeWidth="0.0" text="English Dictionary" textAlignment="CENTER" wrappingWidth="300.0">
+                            <font>
+                                <Font name="System Bold Italic" size="28.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="18.0" fitWidth="20.0" layoutX="142.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/4.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <TextArea layoutX="314.0" prefHeight="518.0" prefWidth="336.0" />
+                <AnchorPane layoutX="314.0" prefHeight="79.0" prefWidth="336.0" style="-fx-background-color: #3498db;">
+                    <children>
+                        <TextField layoutX="42.0" layoutY="40.0" prefHeight="28.0" prefWidth="101.0" style="-fx-background-color: #3498db;" text="Definition">
+                            <font>
+                                <Font name="Cambria Math" size="18.0" />
+                            </font>
+                        </TextField>
+                        <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="25.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button fx:id="a" layoutX="8.0" layoutY="45.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="26.0" style="-fx-background-color: #3498db;" />
+                        <ImageView fx:id="image1" fitHeight="26.0" fitWidth="26.0" layoutX="8.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/2.png" />
+                            </image>
+                        </ImageView>
+                  <MenuButton layoutX="240.0" layoutY="45.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="+...">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#wordAdd" text="Add" />
+                      <MenuItem mnemonicParsing="false" onAction="#wordDel" text="Delete" />
+                        <MenuItem mnemonicParsing="false" onAction="#wordSet" text="Set" />
+                        <MenuItem mnemonicParsing="false" onAction="#wordShow" text="ShowAll" />
+                    </items>
+                  </MenuButton>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="Anchorpane" layoutY="79.0" prefHeight="439.0" prefWidth="314.0" style="-fx-background-color: #ecf0f1;">
+                    <children>
+                        <TextField fx:id="target" layoutX="14.0" layoutY="21.0" prefHeight="32.0" prefWidth="220.0" promptText="Search box..." style="-fx-border-color: #e74c3c;">
+                            <font>
+                                <Font name="Times New Roman" size="15.0" />
+                            </font>
+                        </TextField>
+                        <Button id="button" fx:id="button" layoutX="243.0" layoutY="21.0" mnemonicParsing="false" onAction="#submit" prefHeight="32.0" prefWidth="57.0" style="-fx-background-image: #3498db;" text="Search" />
+                        <ListView fx:id="list" layoutX="-1.0" layoutY="55.0" prefHeight="384.0" prefWidth="314.0" />
+                    </children>
+                </AnchorPane>
+                <TextArea fx:id="textArea" layoutX="314.0" layoutY="75.0" onKeyPressed="#submit" prefHeight="439.0" prefWidth="336.0" />
+            <ImageView fitHeight="24.0" fitWidth="20.0" layoutX="616.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pngegg.png" />
+               </image>
+            </ImageView>
+                  <Button layoutX="609.0" layoutY="83.0" mnemonicParsing="false" onAction="#action" opacity="0.0" prefHeight="24.0" prefWidth="34.0" text="sound" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

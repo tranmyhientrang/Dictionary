@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1abc9c;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <TextField fx:id="add_target" layoutX="85.0" layoutY="68.0" prefHeight="34.0" prefWidth="448.0" promptText="new target..." style="-fx-border-color: #c0392b;" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="67.0" />
+      <Button fx:id="Add" layoutX="155.0" layoutY="174.0" mnemonicParsing="false" onAction="#f_add" prefHeight="28.0" prefWidth="95.0" style="-fx-background-color: #27ae60;" text="Add" />
+      <Button fx:id="close_add" layoutX="338.0" layoutY="175.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #e00e19;" text="Cancel" textFill="#111010" />
+      <TextField fx:id="add_explain" layoutX="85.0" layoutY="113.0" prefHeight="34.0" prefWidth="448.0" promptText="new explain..." style="-fx-border-color: #c0392b;" />
+   </children>
+</AnchorPane>
