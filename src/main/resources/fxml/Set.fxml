@@ -3,15 +3,30 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.setController">
+<AnchorPane prefHeight="279.0" prefWidth="531.0" style="-fx-background-color: #ffbe76;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dictionary.SetController">
    <children>
-      <TextArea fx:id="set_target" layoutX="74.0" layoutY="73.0" prefHeight="39.0" prefWidth="197.0" promptText="nhập từ cần sửa..." style="-fx-border-color: #f39c12;" />
-      <Button layoutX="135.0" layoutY="193.0" mnemonicParsing="false" onAction="#f_set" prefHeight="37.0" prefWidth="98.0" style="-fx-background-color: #f39c12;" text="set" />
-      <Button fx:id="close_set" layoutX="336.0" layoutY="193.0" mnemonicParsing="false" onAction="#close" prefHeight="37.0" prefWidth="98.0" style="-fx-background-color: #e00e19;" text="cencel" />
-      <TextArea fx:id="set_explain" layoutX="74.0" layoutY="123.0" prefHeight="40.0" prefWidth="197.0" promptText="nhập nghĩa cần sửa..." style="-fx-border-color: #f39c12;" />
-      <TextArea fx:id="set_target1" layoutX="300.0" layoutY="73.0" prefHeight="39.0" prefWidth="197.0" promptText="nhập từ sau khi sửa..." style="-fx-border-color: #f39c12;" />
-      <TextArea fx:id="set_explain1" layoutX="300.0" layoutY="123.0" prefHeight="39.0" prefWidth="197.0" promptText="nhập nghĩa sau khi sửa..." style="-fx-border-color: #f39c12;" />
+      <TextArea fx:id="set_target" layoutX="49.0" layoutY="93.0" prefHeight="39.0" prefWidth="197.0" promptText="nhập từ cần sửa..." style="-fx-border-color: #f39c12;">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextArea>
+      <Button layoutX="128.0" layoutY="193.0" mnemonicParsing="false" onAction="#f_set" prefHeight="37.0" prefWidth="98.0" style="-fx-background-color: #C4E538;" text="Set" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="close_set" layoutX="304.0" layoutY="193.0" mnemonicParsing="false" onAction="#close" prefHeight="37.0" prefWidth="98.0" style="-fx-background-color: #C4E538;" text="Cancel" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextArea fx:id="set_target1" layoutX="269.0" layoutY="67.0" prefHeight="39.0" prefWidth="197.0" promptText="nhập từ sau khi sửa..." style="-fx-border-color: #f39c12;">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextArea>
+      <TextArea fx:id="set_explain1" layoutX="269.0" layoutY="117.0" prefHeight="39.0" prefWidth="197.0" promptText="nhập nghĩa sau khi sửa..." style="-fx-border-color: #f39c12;">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextArea>
    </children>
    <opaqueInsets>
       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
