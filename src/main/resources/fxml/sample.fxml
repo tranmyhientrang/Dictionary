@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dictionary.MainController">
     <columnConstraints>
         <ColumnConstraints />
     </columnConstraints>
@@ -15,14 +15,14 @@
     <children>
         <AnchorPane prefHeight="500.0" prefWidth="650.0">
             <children>
-                <AnchorPane prefHeight="79.0" prefWidth="314.0" style="-fx-background-color: #67e6dc;">
+                <AnchorPane prefHeight="79.0" prefWidth="314.0" style="-fx-background-color: #34ace0;">
                     <children>
-                        <Text layoutX="6.0" layoutY="33.0" strokeWidth="0.0" text="English Dictionary" textAlignment="CENTER" wrappingWidth="300.0">
+                        <Text layoutX="7.0" layoutY="31.0" strokeWidth="0.0" text="English Dictionary" textAlignment="CENTER" wrappingWidth="300.0">
                             <font>
-                                <Font name="System Bold" size="23.0" />
+                                <Font name="System Bold" size="24.0" />
                             </font>
                         </Text>
-                        <ImageView fitHeight="45.0" fitWidth="227.0" layoutX="44.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="69.0" fitWidth="253.0" layoutX="31.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../images/—Pngtree—red%20vector%20pattern%20material_1675281%20(1).png" />
                             </image>
@@ -30,48 +30,55 @@
                     </children>
                 </AnchorPane>
                 <TextArea layoutX="314.0" prefHeight="518.0" prefWidth="336.0" />
-                <AnchorPane layoutX="314.0" prefHeight="79.0" prefWidth="336.0" style="-fx-background-color: #3498db;">
+                <AnchorPane layoutX="314.0" prefHeight="79.0" prefWidth="336.0" style="-fx-background-color: #34ace0;">
                     <children>
-                        <TextField layoutX="42.0" layoutY="40.0" prefHeight="28.0" prefWidth="101.0" style="-fx-background-color: #3498db;" text="Definition">
+                        <TextField layoutX="48.0" layoutY="20.0" prefHeight="49.0" prefWidth="154.0" style="-fx-background-color: #34ace0;" text="Definition">
                             <font>
-                                <Font name="Cambria Math" size="18.0" />
+                                <Font name="Cambria" size="25.0" />
                             </font>
                         </TextField>
                         <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="25.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
-                        <Button fx:id="a" layoutX="8.0" layoutY="45.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="26.0" style="-fx-background-color: #3498db;" />
-                        <ImageView fx:id="image1" fitHeight="26.0" fitWidth="26.0" layoutX="8.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="image1" fitHeight="42.0" fitWidth="57.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../images/2.png" />
                             </image>
                         </ImageView>
-                  <MenuButton layoutX="240.0" layoutY="45.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="+...">
-                    <items>
-                      <MenuItem mnemonicParsing="false" onAction="#wordAdd" text="Add" />
-                      <MenuItem mnemonicParsing="false" onAction="#wordDel" text="Delete" />
-                        <MenuItem mnemonicParsing="false" onAction="#wordSet" text="Set" />
-                        <MenuItem mnemonicParsing="false" onAction="#wordShow" text="ShowAll" />
-                    </items>
-                  </MenuButton>
+                        <MenuButton layoutX="240.0" layoutY="45.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="+...">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#wordAdd" text="Add" />
+                                <MenuItem mnemonicParsing="false" onAction="#wordDel" text="Delete" />
+                                <MenuItem mnemonicParsing="false" onAction="#wordSet" text="Set" />
+                                <MenuItem mnemonicParsing="false" onAction="#wordShow" text="ShowAll" />
+                            </items>
+                        </MenuButton>
                     </children>
                 </AnchorPane>
                 <AnchorPane fx:id="Anchorpane" layoutY="79.0" prefHeight="439.0" prefWidth="314.0" style="-fx-background-color: #ecf0f1;">
                     <children>
-                        <TextField fx:id="target" layoutX="14.0" layoutY="21.0" prefHeight="32.0" prefWidth="220.0" promptText="Search box..." style="-fx-border-color: #e74c3c;">
+                        <TextField fx:id="target" layoutX="14.0" layoutY="11.0" prefHeight="32.0" prefWidth="253.0" promptText="Search box..." style="-fx-border-color: #e74c3c;">
                             <font>
                                 <Font name="Times New Roman" size="15.0" />
                             </font>
                         </TextField>
-                        <Button id="button" fx:id="button" layoutX="243.0" layoutY="21.0" mnemonicParsing="false" onAction="#submit" prefHeight="32.0" prefWidth="57.0" style="-fx-background-image: #3498db;" text="Search" />
                         <ListView fx:id="list" layoutX="-1.0" layoutY="55.0" prefHeight="384.0" prefWidth="314.0" />
+                        <ImageView fitHeight="42.0" fitWidth="27.0" layoutX="274.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/1.png" />
+                            </image>
+                        </ImageView>
+                        <Button id="button" fx:id="button" layoutX="271.0" layoutY="12.0" mnemonicParsing="false" onAction="#submit" opacity="0.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-image: #3498db;" />
                     </children>
                 </AnchorPane>
-                <TextArea fx:id="textArea" layoutX="314.0" layoutY="75.0" onKeyPressed="#submit" prefHeight="439.0" prefWidth="336.0" />
-            <ImageView fitHeight="24.0" fitWidth="20.0" layoutX="616.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/pngegg.png" />
-               </image>
-            </ImageView>
-                  <Button layoutX="609.0" layoutY="83.0" mnemonicParsing="false" onAction="#action" opacity="0.0" prefHeight="24.0" prefWidth="34.0" text="sound" />
+                <TextArea fx:id="textArea" layoutX="314.0" layoutY="79.0" onKeyPressed="#submit" prefHeight="439.0" prefWidth="336.0" style="-fx-background-color: #34ace0;">
+                    <font>
+                        <Font name="System Italic" size="25.0" />
+                    </font></TextArea>
+                <ImageView fitHeight="24.0" fitWidth="20.0" layoutX="616.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/pngegg.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="609.0" layoutY="83.0" mnemonicParsing="false" onAction="#action" opacity="0.0" prefHeight="24.0" prefWidth="34.0" text="sound" />
             </children>
         </AnchorPane>
     </children>
